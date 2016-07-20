@@ -1,0 +1,17 @@
+.map {
+	text-align: center;
+	padding-bottom: 3%;
+	
+	.container {
+
+		.map-container {
+			@include span-columns(12);
+			margin-top: 20px;
+			height: 400px;
+
+			@include media($mobile) {
+				height: 300px;
+			}
+		}
+	}
+}

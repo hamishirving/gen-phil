@@ -1,0 +1,24 @@
+.footer {
+
+	.container {
+
+		.footer-content {
+			@include clearfix;
+			padding: 15px 0;
+			font-size: em(14);
+			border-top: 1px solid $color-mediumGrey;
+
+			.left {
+				float: left;
+			}
+
+			.right {
+				float: right;
+
+				a {
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}

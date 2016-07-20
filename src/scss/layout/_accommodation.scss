@@ -1,0 +1,94 @@
+.accommodation {
+
+	.container {
+
+		.accom-grid {
+			@include span-columns(12);
+
+			.accom-grid-item {
+				@include span-columns(6);
+				@include omega(2n);
+				margin-bottom: 5%;
+				text-align: center;
+
+				@include media($mobile) {
+					@include span-columns(12);
+					@include omega;
+				}
+
+				&:nth-child(odd) {
+					padding-right: 3%;
+
+					@include media($mobile) {
+						padding: 0;
+					}
+				}
+
+				&:nth-child(even) {
+					padding-left: 3%;
+
+					@include media($mobile) {
+						padding: 0;
+					}
+				}
+
+				.accom-img {
+					height: 100%;
+					width: 100%;
+					display: block;
+					line-height: 0;
+					position: relative;
+
+					&:before {
+						content: "";
+						position: absolute;
+						width: 100%;
+						height: 100%;
+						left: 0;
+						top: 0;
+						bottom: 0;
+						right: 0;
+						background: transparent;
+						transition: all 300ms ease;
+					}
+
+					&:after {
+						content: "";
+						font-size: 1.5em;
+						position: absolute;
+						left: 47.5%;
+						top: 52.5%;
+						transition: all 400ms ease;
+					}
+
+					&:hover:before {
+						content: "";
+						background: rgba(255,255,255,0.9);
+					}
+
+					&:hover:after {
+						content: "\f08e";
+						font-size: 1.5em;
+						font-family: FontAwesome;
+						position: absolute;
+						left: 50%;
+						top: 50%;
+						transform: translate(-50%, -50%);
+					}
+				}
+
+				img {
+					width: 100%;
+				}
+
+				a {
+					transition: all 300ms ease;
+					
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+	}
+}

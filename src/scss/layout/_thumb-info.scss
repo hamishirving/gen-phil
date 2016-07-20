@@ -1,0 +1,106 @@
+.thumb-info {
+
+	.container {
+
+		.thumb-info-row {
+			@include span-columns(12);
+			// @include shift(1);
+			margin-bottom: 3%;
+
+			@include media($mobile) {
+				margin-bottom: 100%;
+			}
+		
+			.thumb-img {
+				width: 100%;
+				height: 450px;
+				position: relative;
+
+				@include media($mobile) {
+					height: 300px;
+				}
+
+				&.fullers {
+					background: url('../img/fullers-2.jpg');
+					background-size: cover;
+					background-repeat: no-repeat;
+					background-position: left;
+				}
+
+				&.buses {
+					background: url('../img/bus.jpg');
+					background-size: cover;
+					background-repeat: no-repeat;
+					background-position: right;
+				}
+
+				&.couple {
+					background: url('../img/hero-crop.jpg');
+					background-size: cover;
+					background-repeat: no-repeat;
+					background-position: right;
+				}
+
+				&.wedding {
+					background: url('../img/OakuraBay.jpg');
+					background-size: cover;
+					background-repeat: no-repeat;
+					background-position: right;
+				}
+
+			}
+
+			.info-text-wrapper {
+				position: absolute;
+				top: 5%;
+				right: 2.5%;
+				bottom: 5%;
+				width: 45%;
+				height: 90%;
+				background: $color-white;
+
+				@include media($mobile) {
+					display: inline-block;
+					width: 100%;
+					height: 100%;
+					left: 0;
+					top: 0;
+					transform: translateY(100%);
+				}
+
+				&.left {
+					left: 2.5%;
+
+					@include media($mobile) {
+						left: 0;
+					}
+				}
+
+				.thumb-info-text {
+					position: absolute;
+					top: 50%;
+					width: 100%;
+					padding: 15%;
+					transform: translateY(-50%);
+
+					@include media($mobile) {
+						margin-top: 20px;
+						padding: 5%;
+					}
+
+					&.center {
+						text-align: center;
+					}
+
+					h2 {
+						margin-top: 5px;
+					}
+
+					h3 {
+						margin: 15px 0;
+					}
+				}
+			}
+		}
+	}
+}

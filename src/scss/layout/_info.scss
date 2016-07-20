@@ -1,0 +1,45 @@
+.info {
+	padding: 60px 0;
+
+	.container {
+
+		.info-text {
+			@include span-columns(8);
+			@include shift(2);
+			text-align: center;
+
+			@include media($mobile) {
+				@include span-columns(12);
+				@include shift(0);
+			}
+
+			.thumb {
+				@include span-columns(4 of 8);
+				@include shift(2);
+				@include omega;
+			}
+
+			img {
+				width: 100%;
+			}
+
+			h2 {
+				margin-top: 0;
+			}
+		}
+
+		// .center-img {
+		// 	@include span-columns(8);
+		// 	@include shift(2);
+
+		// 	@include media($mobile) {
+		// 		@include span-columns(12);
+		// 		@include shift(0);
+		// 	}
+
+		// 	img {
+		// 		width: 100%;
+		// 	}
+		// }
+	}
+}

@@ -1,0 +1,102 @@
+body {
+	font-family: $font-primary;
+	font-size: em(16);
+	color: $color-black;
+}
+
+h1 {
+	font-family: $font-secondary;
+	font-size: 2.75em;
+	line-height: 1.25;
+	font-weight: 400;
+
+	@include media($tablet) {
+		font-size: 2.5em;
+		line-height: 1.125;
+	}
+	
+	@include media($mobile) {
+		font-size: 2em;
+		line-height: 1.25;
+	}
+}
+
+h2 {
+	font-family: $font-secondary;
+	font-size: 2em;
+	line-height: 1.25;
+	font-weight: 400;
+
+	@include media($tablet) {
+		font-size: 1.75em;
+	}
+
+	@include media($mobile) {
+		font-size: 1.5em;
+		// line-height: 1.153;
+	}
+}
+
+h3 {
+	font-family: $font-primary;
+	text-transform: uppercase;
+	font-size: 1.5em;
+	line-height: 1.25;
+	font-weight: 400;
+
+	@include media($tablet) {
+		font-size: 1.375em;
+	}
+
+	@include media($mobile) {
+		font-size: 1.25em;
+		// line-height: 1.136;
+	}
+}
+
+h4 {
+	font-size: 1.125em;
+	line-height: 1.222;
+	font-weight: 400;
+
+	@include media($mobile) {
+		// line-height: 1.111;
+	}
+}
+
+h5 {
+	font-size: 1em;
+	line-height: 1.2;
+	font-weight: 400;
+	// letter-spacing: 1px;
+}
+
+p, li {
+	font-family: $font-primary;
+	// font-size: em(20);
+	line-height: 1.5em;
+}
+
+p a {
+	text-decoration: underline;
+}
+
+ul {
+	padding-left: 20px;
+}
+
+a {
+	font-family: $font-primary;
+	font-size: 1em;
+	// font-weight: 700;
+	text-decoration: none;
+	color: $color-black;
+}
+
+blockquote {
+	font-size: em(32);
+	text-align: center;
+	font-family: $font-secondary;
+	color: $color-black;
+	margin-top: 40px;
+}

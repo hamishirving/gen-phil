@@ -1,0 +1,15 @@
+.loader {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+	background: $color-white;
+
+	img {
+		position: absolute;
+		top: 200px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
